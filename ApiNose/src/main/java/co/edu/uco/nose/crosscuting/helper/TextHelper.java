@@ -1,6 +1,7 @@
 package co.edu.uco.nose.crosscuting.helper;
 
 public final class TextHelper {
+	
 	// Constante para representar una cadena vacía
 	private static final String EMPTY = "";
 	// Constructor privado para evitar la instanciación
