@@ -1,12 +1,19 @@
 package co.edu.uco.nose.data.dao.entity.postgresql;
 
+import java.sql.Connection;
 import java.util.List;
 import java.util.UUID;
 
+import co.edu.uco.nose.crosscuting.helper.SqlConnectionHelper;
 import co.edu.uco.nose.data.dao.entity.IdentificationTypeDAO;
 import co.edu.uco.nose.entity.IdentificationTypeEntity;
 
-public final class IdentificationTypePostgreSqlDAO implements IdentificationTypeDAO {
+public class IdentificacionTypePostgresqlDAO extends SqlConnectionHelper implements IdentificationTypeDAO {
+
+	protected IdentificacionTypePostgresqlDAO(Connection connection) {
+		super(connection);
+		// TODO Auto-generated constructor stub
+	}
 
 	@Override
 	public List<IdentificationTypeEntity> finALL() {
@@ -25,6 +32,7 @@ public final class IdentificationTypePostgreSqlDAO implements IdentificationType
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
 	
 
 }
