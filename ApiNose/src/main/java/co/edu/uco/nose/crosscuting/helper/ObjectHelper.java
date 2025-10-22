@@ -7,7 +7,7 @@ public final class ObjectHelper {
 	}
 	
 	// Método para verificar si un objeto es nulo
-	public static <O> boolean isNull(O object) {
+	public static <O> boolean isNull(final O object) {
 		
 	// Retorna true si el objeto es nulo, de lo contrario false
 		return object == null; 

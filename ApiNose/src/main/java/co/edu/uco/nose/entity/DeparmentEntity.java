@@ -2,12 +2,10 @@ package co.edu.uco.nose.entity;
 
 import java.util.UUID;
 
-import co.edu.uco.nose.dto.CountryDTO;
-
 public class DeparmentEntity {
 	
 	private UUID id;
-    private CountryDTO country;
+    private CountryEntity country;
     private String name;
  
     // Default constructor
@@ -16,7 +14,7 @@ public class DeparmentEntity {
     }
  
     // Complete constructor
-    public DeparmentEntity(final UUID id, final CountryDTO country, final String name) {
+    public DeparmentEntity(final UUID id, final CountryEntity country, final String name) {
         this.id = id;
         this.country = country;
         this.name = name;
@@ -27,7 +25,7 @@ public class DeparmentEntity {
         return id;
     }
  
-    public CountryDTO getCountry() {
+    public CountryEntity getCountry() {
         return country;
     }
  
@@ -40,7 +38,7 @@ public class DeparmentEntity {
         this.id = id;
     }
  
-    public void setCountry(final CountryDTO country) {
+    public void setCountry(final CountryEntity country) {
         this.country = country;
     }
  

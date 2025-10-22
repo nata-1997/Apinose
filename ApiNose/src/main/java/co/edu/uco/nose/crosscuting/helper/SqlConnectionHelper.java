@@ -151,10 +151,10 @@ public abstract class SqlConnectionHelper {
         }
     }
     
-    // Métodos para apertura de conexión (estándar para PostgreSQL)
-    public static Connection openConnection(final String connectionString) {
+    public static Connection openConnection(final String url, final String user, final String password) {
         try {
-            return DriverManager.getConnection(connectionString);
+            final Connection connection = DriverManager.getConnection(url, user, password);
+            return connection;
         } catch (final SQLException exception) {
             final String userMessage = MessagesEnum.USER_ERROR_CONNECTION_OPEN_FAILED.getContent();
             final String technicalMessage = MessagesEnum.TECHNICAL_ERROR_CONNECTION_OPEN_FAILED.getContent();

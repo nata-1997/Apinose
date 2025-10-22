@@ -4,8 +4,8 @@ import java.util.UUID;
 
 public class IdentificationTypeEntity {
 	
-	private UUID id;
-    private String name;
+	public UUID id;
+    public String name;
  
     // Default constructor
     public IdentificationTypeEntity() {

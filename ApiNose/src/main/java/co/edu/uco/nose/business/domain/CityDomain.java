@@ -28,6 +28,12 @@ public final class CityDomain extends Domain {
 		setName(name);
 		setDeparment(new DeparmentDomain());
 	}
+	
+	public CityDomain(final UUID id, final String name, final DeparmentDomain deparment) {
+		super(id);
+		setName(name);
+		setDeparment(deparment);
+	}
 
 	public String getName() {
 		return name;

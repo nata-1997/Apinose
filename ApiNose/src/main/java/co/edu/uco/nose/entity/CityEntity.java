@@ -2,12 +2,11 @@ package co.edu.uco.nose.entity;
 
 import java.util.UUID;
 
-import co.edu.uco.nose.dto.DeparmentDTO;
 
 public class CityEntity {
 	
 	private UUID id;
-    private DeparmentDTO deparment;
+    private DeparmentEntity deparment;
     private String name;
  
     // Default constructor
@@ -16,9 +15,9 @@ public class CityEntity {
     }
  
     // Complete constructor
-    public CityEntity(final UUID id, final DeparmentDTO department, final String name) {
+    public CityEntity(final UUID id, final DeparmentEntity deparment, final String name) {
         this.id = id;
-        this.deparment = department;
+        this.deparment = deparment;
         this.name = name;
     }
  
@@ -27,7 +26,7 @@ public class CityEntity {
         return id;
     }
  
-    public DeparmentDTO getDepartment() {
+    public DeparmentEntity getDeparment() {
         return deparment;
     }
  
@@ -40,8 +39,8 @@ public class CityEntity {
         this.id = id;
     }
  
-    public void setDepartment(final DeparmentDTO department) {
-        this.deparment = department;
+    public void setDeparment(final DeparmentEntity deparment) {
+        this.deparment = deparment;
     }
  
     public void setName(final String name) {

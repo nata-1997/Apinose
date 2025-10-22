@@ -4,7 +4,7 @@ import java.util.List;
 
 public interface RetrieveDAO <E, ID> {
 	
-	List<E> finALL();
+	List<E> findAll();
 	
 	List<E> findByIdFilter(E filterEntity);
 	

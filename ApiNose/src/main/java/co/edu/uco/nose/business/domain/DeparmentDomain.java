@@ -13,7 +13,7 @@ public final class DeparmentDomain extends Domain {
 	
 	// Constructor
 	public DeparmentDomain() {
-		super(UUIDHelper.getUUIDHelper().getDefault());
+		super(UUIDHelper.getDefault());
 		setName(TextHelper.getDefault());
 		setCountry(new CountryDomain());
 	}
