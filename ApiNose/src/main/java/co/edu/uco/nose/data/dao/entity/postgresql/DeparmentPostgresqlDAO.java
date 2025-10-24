@@ -26,7 +26,7 @@ public final class DeparmentPostgresqlDAO extends SqlConnectionHelper implements
         SqlConnectionHelper.validateConnection(getConnection());
 
         final List<DeparmentEntity> deparments = new ArrayList<>();
-        final String sql = "SELECT * FROM departamento";
+        final String sql = "SELECT * FROM public.departamento";
 
         try (PreparedStatement preparedStatement = getConnection().prepareStatement(sql);
              ResultSet resultSet = preparedStatement.executeQuery()) {

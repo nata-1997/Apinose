@@ -19,6 +19,6 @@ public final class TextHelper {
 	public static String getDefaultWithTrim(final String value) {
 		return getDefault(value).trim();
 	}
-	
+
 
 }

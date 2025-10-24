@@ -10,3 +10,4 @@ public interface EntityAssembler<E,D> {
 	
 	List<E> toEntityListFromDomainList(List<D> domainList);
 }
+

@@ -88,7 +88,7 @@ public final class UserPostgresqlDAO extends SqlConnectionHelper implements User
         SqlConnectionHelper.validateConnection(getConnection());
 
         final List<UserEntity> users = new ArrayList<>();
-        final StringBuilder sql = new StringBuilder("SELECT * FROM usuario WHERE 1=1");
+        final StringBuilder sql = new StringBuilder("SELECT * FROM public.usuario WHERE 1=1");
 
         if (filterEntity.getIdentificationNumber() != null && !filterEntity.getIdentificationNumber().isEmpty()) {
             sql.append(" AND numero_identificacion = ?");

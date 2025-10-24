@@ -22,6 +22,7 @@ public abstract class DAOFactory {
 		switch (factory) {
 		case POSTGRESQL:
 			return new PostgresqlDAOFactory();
+
 		default: 
 			var userMessage = MessagesEnum.USER_ERROR_SQL_CONNECTION_IS_UNEXPECTED_ERROR_VALIDATING_CONNECTION_STATUS.getContent();
 			var technicalMessage = MessagesEnum.TECHNICAL_ERROR_SQL_CONNECTION_IS_UNEXPECTED_ERROR_VALIDATING_CONNECTION_STATUS.getContent();

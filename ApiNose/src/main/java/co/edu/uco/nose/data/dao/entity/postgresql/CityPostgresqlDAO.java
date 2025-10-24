@@ -32,7 +32,7 @@ public final class CityPostgresqlDAO extends SqlConnectionHelper implements City
         SqlConnectionHelper.validateConnection(getConnection());
 
         final List<CityEntity> cities = new ArrayList<>();
-        final String sql = "SELECT id, departamento, nombre FROM ciudad";
+        final String sql = "SELECT id, departamento, nombre FROM public.ciudad";
 
         try (PreparedStatement preparedStatement = getConnection().prepareStatement(sql);
              ResultSet resultSet = preparedStatement.executeQuery()) {

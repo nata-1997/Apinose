@@ -10,7 +10,7 @@ public interface UserFacade {
 	
 	void registerNewUserInformation(UserDTO userDTO);
 	
-	void dropUserInformacion(UUID ID);
+	void dropUserInformacion(UUID id);
 	
 	void updateUserInformation(UUID id, UserDTO userDTO);
 	

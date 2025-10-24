@@ -26,7 +26,7 @@ public final class IdentificationTypePostgresqlDAO extends SqlConnectionHelper i
 	        SqlConnectionHelper.validateConnection(getConnection());
 
 	        final List<IdentificationTypeEntity> identificationTypes = new ArrayList<>();
-	        final String sql = "SELECT * FROM tipo_identificacion";
+	        final String sql = "SELECT * FROM public.tipoidentificacion";
 
 	        try (PreparedStatement preparedStatement = getConnection().prepareStatement(sql);
 	             ResultSet resultSet = preparedStatement.executeQuery()) {

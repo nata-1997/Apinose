@@ -25,7 +25,7 @@ public final class CountryPostgresqlDAO extends SqlConnectionHelper implements C
         SqlConnectionHelper.validateConnection(getConnection());
 
         final List<CountryEntity> countries = new ArrayList<>();
-        final String sql = "SELECT * FROM pais";
+        final String sql = "SELECT * FROM public.pais";
 
         try (PreparedStatement preparedStatement = getConnection().prepareStatement(sql);
              ResultSet resultSet = preparedStatement.executeQuery()) {
